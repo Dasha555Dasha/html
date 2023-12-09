@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document1</title>
+    <title>ГЛАВНАЯ</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 </HTML>
@@ -15,22 +16,128 @@
 <body>
     <header class="header">
         <div class="container header__inner">
-        <a href="#" class="logo">
-            <img class="logo__img" src="images/logo.png" alt="">
-        </a>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">Выбрать репититора</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">О нашей школе</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="user__login">Вход</a>
+            <a href="#" class="logo">
+                <img class="logo__img" src="images/logo.png" alt="">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div id="rectangle" class="top__button__rectangle">
+                            <a href="#" class="menu__link">Выбрать репититора</a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div id="rectangle" class="top__button__rectangle">
+                            <a href="about.html" class="menu__link">О нашей школе</a>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div id="rectangle" class="top__button__rectangle">
+                            <a href="#openModalLogin" class="user__login">Вход</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        <!-- Модальное окно логин-->
+        <div id="openModalLogin" class="modalDialogLogin">
+            <div class="modalbox">
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="login__card">ВХОД</div>
+                <div class="login__input">
+                    <table class="table_login">
+                        <tr>
+                            <td class="login__pos"> <input class="login__input_text" name="login" placeholder="Логин"
+                                    type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td class="pass_pos"><input class="pass_input__text" name="password" 
+                                 placeholder="Пароль"
+                                    type="text"> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="obj__button_login"><button class="card__button__login" type="button">Войти</button>
+                </div>
+                <a href="#close" title="Close" class="close">x</a>
+            </div>
+            <!-- Модальное окно логин-->
     </header>
-    
-    <top class="topblock">
-    <a href="" class="uchilka"><img src="./images/uchilka.png" alt="" class="uchilka__img"></a>
-    </top>
+
+    <main class="main">
+        <section class="top">
+            <div class="container topblock__inner">
+                <div class="topblock__content">
+                    <div class="text__topblock1">Успей записаться со скидкой!</div>
+                    <div class="text__topblock2">Запишись к нашим репетиторам по русскому и математике и получи скидку
+                        50%
+                        на 3-ий предмет.</div>
+                </div>
+                <picture class="uchilka">
+                    <img src="./images/uchilka.png" alt="" srcset="">
+                </picture>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="container bottom__inner">
+                <div class="text__bottomblock">ВЫБЕРИ СЕБЕ РЕПЕТИТОРА</div>
+                <div class="bottom_card">
+                    <!-- Карточки преподавателей -->
+                    <nav class="bottom__menu">
+                        <ul class="menu__list">
+                            <li class="bottommenu__item"><a href="#" class="bottomenu__link"><img
+                                        src="./images/navleft.png" alt="" srcset=""></a></li>
+                            <li class="bottommenu__item"><a href="#" class="bottomenu__link"></a>
+                                <bottom__card1 class="bottom_card">
+                                    <div id="rectangle" class="bottom__card__rectangle">
+                                        <div class="fio__block">Цыганкова Дарья Романовна</div>
+                                        <picture class="avatar__block">
+                                            <img src="./images/avatar.png" alt="" srcset="">
+                                        </picture>
+                                        <div class="pr__block">Математика</div>
+                                        <button type="button" class="bottom_price"><a href="#openModal"
+                                                class="bottomenu__link"> Узнать о ценах</a></button>
+                                    </div>
+                                </bottom__card1>
+                            </li>
+                            <li class="bottommenu__item"><a href="#o" class="bottomenu__link"></a>
+                                <bottom__card2 class="bottom_card">
+                                    <div id="rectangle" class="bottom__card__rectangle">
+                                        <div class="fio__block">Иванова Анна Ивановна</div>
+                                        <picture class="avatar__block">
+                                            <img src="./images/avatar.png" alt="" srcset="">
+                                        </picture>
+                                        <div class="pr__block">Русский язык</div>
+                                        <button type="button" class="bottom_price"><a href="#openModal"
+                                                class="bottomenu__link"> Узнать о ценах</a></button>
+                                    </div>
+                                </bottom__card2>
+                            </li>
+                            <li class="bottommenu__item"><a href="#" class="bottomenu__link"></a>
+                                <bottom__card3 class="bottom_card">
+                                    <div id="rectangle" class="bottom__card__rectangle">
+                                        <div class="fio__block">Петрова Мария Валентиновна</div>
+                                        <picture class="avatar__block">
+                                            <img src="./images/avatar.png" alt="" srcset="">
+                                        </picture>
+                                        <div class="pr__block">География</div>
+                                        <button type="button" class="bottom_price"><a href="#openModal"
+                                                class="bottomenu__link"> Узнать о ценах</a></button>
+                                    </div>
+                                </bottom__card3>
+                            </li>
+                            <li class="bottommenu__item"><a href="#" class="bottomenu__link"><img
+                                        src="./images/navright.png" alt="" srcset=""></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="bottom__button">
+                    <button type="button" class="bottom_add"><a href="#" class="bottomenu__link">+ Добавить</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer claass="footer">
         <div class="container footer__inner">
@@ -38,6 +145,42 @@
         </div>
     </footer>
 
+    <!-- Модальное окно преподователей-->
+    <div id="openModal" class="modalDialog">
+        <div class="modalbox">
+            <a href="#close" title="Close" class="close">X</a>
+            <div class="fio__card">Иванова Анна Ивановна </div>
+            <div class="predmet_card">
+                <ul class="text1">
+                    <li class="text__list">
+                        <img class="img__card" src="./images/avatar.png" alt=""></img>
+                    </li>
+                    <li class="text__list">
+                        <div class="text__card">ПОДГOTOВКА К ОГЭ/ЕГЭ ПО МAТEMATИKE C НУЛЯ!<br>
 
-    <script src="./js/main.js"></script>
+                            Занятия прoxoдят дистaнционнo (Discord, Zoom, Skype)<br>
+                            <br><br>
+                            – Пoдготoвка с нуля.<br>
+                            – Еженедельно пpовожу экзамен по пpoйденным тeмам – чтобы выявить прoблемные зaдaния.<br>
+                            – Все темы будут изучаться по принципу «от пpocтого к сложному».<br>
+                            – Дaю конcпекты и шпоры по каждой теме для самостоятельной работы.<br>
+                            – После каждого занятия присылаю видеозапись урока <br>
+                            <br>
+                            Стоимость одного занятия составляет 500 руб с человека. Урок длится 1 час.<br>
+                            <br>
+                            Для того, чтобы записаться на консультацию - напишите сообщение или позвоните. Мест осталось
+                            мало!
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="obj__button"><button class="card__button" type="button">ЗАПИСАТЬСЯ МОЖНО ПО НОМЕРУ :
+                    8(598)246-10-25</button>
+            </div>
+            <a href="#close" title="Close" class="close">x</a>
+        </div>
+        <!-- Модальное окно преподователей-->
+
+        <script src="./js/main.js"></script>
 </body>

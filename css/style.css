@@ -9,7 +9,6 @@ html {
 
 body {
     color: black;
-    /*font-family: 'M PLUS 1p', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -19,48 +18,499 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-ul{
+/* Свойства списка (без точек) */
+ul {
     list-style: none;
 }
-
+/* Свойства контейнеров */
 .container {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
 }
 
-header {
-    background-color: #FFF7EF;
-}
-
+/* Свойства хедера*/
 .header__inner {
+    background-color: #FFF7EF;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Логотип (размеры и расположение) */
 .logo {
+    height: 97px;
+    width: 319px;
     padding-left: 18px;
     padding-top: 2px;
     padding-bottom: 1px;
 }
 
+/* Меню хедера */
 .menu__list {
     display: flex;
-    gap: 40px;
-    font-size: 20px; 
-}
-.user__login {
+    gap: 41px;
     font-size: 20px;
 }
+/* Свойства верхнего блока index.html*/
+.topblock__inner {
+    background-color: #FFF7EF;
+    padding-bottom: 59px;
+}
 
-footer{
-background-color: rgb(255, 255, 255);
+/*Картинка училки (размер и расположение)*/
+.uchilka {
+    position: relative;
+    top: 32px;
+    left: 160px;
+}
+/* Овал картинки училки */
+.uchilka img {
+    border-radius: 50%;
+}
+/* Свойства текста верхнего блока index.html */
+.text__topblock1 {
+    width: 610px;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #5587C2;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 62px;
+    padding-left: 672px;
+}
+
+.text__topblock2 {
+    width: 496px;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #007A5C;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 65px;
+    padding-left: 729px;
+}
+
+.topblock__content {
+    position: absolute;
+}
+
+/* Свойства нижнего блока index.html */
+.bottom__inner {
+    background: linear-gradient(180deg, #E7EFFD 0%, #BCD7F8 100%);
+}
+
+/* Свойства текста нижнего блока index.html */
+.text__bottomblock {
+    width: 580px;
+    color: #007A5C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 43px;
+    padding-left: 451px;
+}
+
+/* Меню выбора учителей */
+.bottom__menu {
+    display: flex;
+    padding-top: 50px;
+}
+
+.menu__list {
+    align-items: center;
+    padding-bottom: 24px;
+    padding-right: 10px;
+}
+
+.menu__item:active{
+    position:relative;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.4) ;
+    border-radius: 30px;
+}
+
+.bottom__card__rectangle {
+    width: 350px;
+    height: 500px;
+    border: 1px;
+    border-color: #EBF4FF;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.top__button__rectangle {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 14px;
+    border: 1px;
+    border-color: #000000;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+}
+
+.bottom_price{
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px;
+    background-color: #007A5C;
+    border-radius: 24px;
+    height: 44px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.bottom_price:active{
+    position:relative;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.4) ;
+    border-radius: 24px;
+}
+
+.bottom_add {
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px;
+    background-color: #007A5C;
+    border-radius: 30px;
+    height: 60px;
+    width: 157px;
+    margin: 0 auto;
+    display: block;
+}
+
+.bottom__button{
+    padding-bottom: 10px;
+}
+
+.bottom_add:active{
+    position:relative;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.4) ;
+    border-radius: 30px;
+}
+.fio__block{
+    font-size: 20px;
+    color: black;
+    padding-top: 32px;
+    text-align: center;
+}
+.pr__block{
+    font-size: 20px;
+    color: black;
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.avatar__block img{
+    padding-top: 40px;
+    width: 185px;
+    height: 243px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Кнопка логина пользователя */
+.user__login {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    border: 1px;
+    border-color: #000000;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+}
+
+/* Свойства верхнего блока страницы about.html */
+.topblock__about{
+    padding-bottom: 200px;
+    background-color: #ffffff;
+}
+
+/* Свойства текста верхнего блока страницы about.html */
+.text1__about__top{
+    color: #261363;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 120px;
+    padding-left: 75px;
+}
+
+.text2__about__top{
+    color: #000;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    width: 597px;
+    height: 350px;
+    padding-left: 158px;
+    padding-top: 70px;
+}
+
+.topblock__about__content{
+    position: absolute;
+}
+
+/* Свойства картинки детей */
+.children{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 463px;
+    height: 397px;
+    top: 180px;
+    left: 800px;
+}
+
+/*Свойства нижнего блока страницы about.html */
+.bottomblock__about{
+    padding-bottom: 150px;
+    background-color: #D9D9D9;
+}
+
+/* Свойства текста нижнего блока страницы about.html */
+.text1__about__bottom{
+    position: absolute;
+    color: #261363;
+    font-size: 22px;
+    height: 290px;
+    width: 580px;
+    padding-left: 720px;
+    padding-top: 172px;
+}
+
+/* Свойства картинки человека за компьютером */
+.user{
+    position: relative;
+    height: 482px;
+    width: 521px;
+    top: 65px;
+    left: 73px;
+}
+
+/* Свойства блока телефона страницы about.html */
+.about__telefon__content{
+background-color: #FFF7EF;
+padding-bottom: 15px;
+}
+
+/* Свойства текста блока телефона страницы about.html */
+.text1__about__telefon{
+    font-size: 36px;
+    color: #959595;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 4px;
+}
+/* Свойства кнопки телефона */
+.about__button{
+    font-size: 16px;
+    color: #ffffff;
+    font-size: 32px;
+    border: 1px;
+    background-color: #007A5C;
+    border-radius: 24px;
+    height: 60px;
+    width: 550px;
+    margin: 0 auto;
+    display: block;
+}
+.about__button:active{
+    box-shadow:3px 3px 5px rgba(0,0,0,0.4) ;
+    border-radius: 24px;
+}
+
+/* Футер */
+footer {
+    background-color: rgb(255, 255, 255);
 }
 
 .footer__inner {
     padding-top: 45px;
     padding-bottom: 40px;
-    font-size: 14px; 
+    color: #959595;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
     text-align: center;
 }
+
+/*=====================================================================*/
+/*================= Модальное окно преподователей и логина ============*/
+.modalDialog {
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog>div {
+    width: 860px;
+    height: 600px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+.img__card{
+    height: 380px;
+    width: 290px;
+}
+
+.close {
+    background: #013807;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background-color: e9cfcf;
+}
+
+.card__button {
+    width: 750px;
+    height: 45px;
+    padding-top: 10px;
+    background-color: #007A5C;
+    border-radius: 20px;
+    border-style: hidden;
+    font-size: 24px;
+    text-align: center;
+}
+
+.predmet__card {
+    display: inline;
+}
+
+
+.fio__card {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.text__card {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 19px;
+    padding-right: 98px;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.text1 {
+    display: flex;
+    gap: 20px;
+}
+
+.obj__button {
+    text-align: center;
+}
+/*================================================================*/
+.modalDialogLogin {
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99998;
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+.modalDialogLogin:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialogLogin>div {
+        width: 620px;
+        height: 420px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+}
+
+.login__card{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 54px;
+}
+.login__input{
+    padding-top: 15px;
+}
+
+.table_login{
+    margin: auto;
+}
+.login__input_text{
+    font-size: 24px;
+    color: #959595;
+    width: 420px;
+    height: 55px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #D9D9D9;
+    border-style: none;
+    
+}
+.pass_input__text{
+    font-size: 24px;
+    color: #959595;
+    width: 420px;
+    height: 55px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #D9D9D9;
+    border-style: none;
+}
+
+.pass_pos{
+padding-top: 42px;
+}
+
+
+.card__button__login {
+    width: 270px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background-color: #007A5C;
+    border-radius: 16px;
+    border-style: hidden;
+    font-size: 24px;
+    text-align: center;
+}
+
+.obj__button_login{
+    padding-top: 85px;
+    text-align: center;
+}
+.card__button__login:active{
+    box-shadow:3px 3px 5px rgba(0,0,0,0.4) ;
+    border-radius: 24px;
+}
+/*===============================================================*/
